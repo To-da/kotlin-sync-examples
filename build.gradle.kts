@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.3.72" apply false
+//    kotlin("jvm") version "1.3.72" apply false
+    kotlin("jvm") version "1.4-M2" apply false //download kotlin EAP plugin for IDEA support
 }
 
 allprojects {
@@ -10,6 +11,8 @@ allprojects {
         mavenLocal()
         mavenCentral()
         jcenter()
+        maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+        maven ("https://kotlin.bintray.com/kotlinx")
     }
 }
 
